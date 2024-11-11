@@ -9,10 +9,10 @@ const getTotalIsles = function (grid) {
             return;
         }
         grid[i][j] = 'W';
-        dfs(i + 1, j);  // Down
-        dfs(i - 1, j);  // Up
-        dfs(i, j + 1);  // Right
-        dfs(i, j - 1);  // Left
+        dfs(i + 1, j);  
+        dfs(i - 1, j);  
+        dfs(i, j + 1);  
+        dfs(i, j - 1);  
     };
 
     let islandCount = 0;
