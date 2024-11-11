@@ -17,7 +17,6 @@ const getTotalIsles = function (grid) {
 
     let islandCount = 0;
 
-    // Traverse the entire grid
     for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
             // If we find an unvisited land cell ('L'), it's the start of a new island
