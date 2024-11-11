@@ -3,8 +3,7 @@ const decodeTheRing = function (s, p) {
   
   const regex = new RegExp(regexPattern);
   
-  // Test if the message matches the pattern and return the result
-  return regex.test(s);  // Returns true or false
+  return regex.test(s);  
 };
 
 module.exports = decodeTheRing;
