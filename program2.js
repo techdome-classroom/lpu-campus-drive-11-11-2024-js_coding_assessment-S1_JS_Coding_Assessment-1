@@ -1,7 +1,9 @@
 const decodeTheRing = function (s, p) {
-
-    // write your code here
-
-  };
+  const regexPattern = '^' + p.split('*').join('.*').split('?').join('.') + '$';
   
-  module.exports = decodeTheRing;
+  const regex = new RegExp(regexPattern);
+  
+  return regex.test(s);  
+};
+
+module.exports = decodeTheRing;
