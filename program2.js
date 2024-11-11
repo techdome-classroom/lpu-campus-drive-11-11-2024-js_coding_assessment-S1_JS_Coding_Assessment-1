@@ -1,7 +1,12 @@
 const decodeTheRing = function (s, p) {
+  let regexPattern = '^' + p
+      .replace(/\?/g, '.') 
+      .replace(/\*/g, '.*') 
+      + '$';
 
-    // write your code here
+  const regex = new RegExp(regexPattern);
 
-  };
-  
-  module.exports = decodeTheRing;
+  return regex.test(s);
+};
+
+module.exports = decodeTheRing;
