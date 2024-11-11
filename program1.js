@@ -8,8 +8,6 @@ const getTotalIsles = function (grid) {
         if (i < 0 || i >= rows || j < 0 || j >= cols || grid[i][j] === 'W') {
             return;
         }
-
-        // Mark the current cell as visited by changing it to 'W'
         grid[i][j] = 'W';
 
         // Explore all four directions (up, down, left, right)
