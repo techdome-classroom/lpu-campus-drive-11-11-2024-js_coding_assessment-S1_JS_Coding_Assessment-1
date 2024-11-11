@@ -1,5 +1,4 @@
 const decodeTheRing = function (s, p) {
-
   const regexPattern = '^' + p.split('*').join('.*').split('?').join('.') + '$';
   
   // Create a regular expression object
